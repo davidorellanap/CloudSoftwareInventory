@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 
 namespace Inventory.Models
 {
-    public class Warehouse
+    public class Currency
     {
-        public int WarehouseId { get; set; }
+        public int Id { get; set; }
         [Required]
-        public string WarehouseName { get; set; }
+        public string Name { get; set; }
+        public string Code { get; set; }
         public string Description { get; set; }
-        [Display(Name = "Branch")]
-        public int BranchId { get; set; }
-
     }
 }
